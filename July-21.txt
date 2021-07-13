@@ -1,8 +1,21 @@
-Q.1 Write a program to print as following :
+# Q.1 Write a program to print as following :
 5
 54
 543
 5432
 54321
 
-Ans: 
+# Ans: 
+ Using Simple Approach: 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout<<"5"<<endl;
+	cout<<"5"<<"4"<<endl;
+	cout<<"5"<<"4"<<"3"<<endl;
+	cout<<"5"<<"4"<<"3"<<"2"<<endl;
+	cout<<"5"<<"4"<<"3"<<"2"<<"1"<<endl;
+	return 0;
+}
