@@ -7,27 +7,10 @@
 
 # Ans: 
 
- Solultion 1:- Using Simple Approach: 
-
-#include <iostream>
-using namespace std;
-
-int main() {
-	cout<<"5"<<endl;
-	cout<<"5"<<"4"<<endl;
-	cout<<"5"<<"4"<<"3"<<endl;
-	cout<<"5"<<"4"<<"3"<<"2"<<endl;
-	cout<<"5"<<"4"<<"3"<<"2"<<"1"<<endl;
-	return 0;
-}
-
-Solution 2:- 
-
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-
     int num;
     cin>>num;
     
@@ -43,7 +26,6 @@ int main() {
         }
         cout<<endl;
     }
-     
 	return 0;
 }
 
@@ -56,4 +38,22 @@ int main() {
 56666
 
 # Ans: 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int num;
+	cin>>num;
+	int i, j;
+	
+	for(i=1; i<=num; i++) {
+	    cout<<i;
+	    for(j=0; j<4; j++){
+	        cout<<i+1;
+	    }
+	    cout<<endl;
+	}
+	return 0;
+}
 
