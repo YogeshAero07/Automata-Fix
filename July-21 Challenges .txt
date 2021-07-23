@@ -152,6 +152,59 @@ int main() {
 	return 0;
 }
 
+# Fibonacci Series:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int num, next, first=0, second=1;
+	cin>>num;
+	
+	for(int i=0; i<num; i++){
+	    if(i<=1){
+	        next = i;
+	    }
+	    else {
+	        next = first + second;
+	        first = second;
+	        second = next;
+	    }
+	    cout<<next<<" ";
+	}
+	return 0;
+}
+
+# Armstrong Number:
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	int num, digit, sum=0;
+	cin>>num;
+	
+	int temp = num;
+	
+	do{
+	    digit= num % 10;
+	    sum = sum + pow(digit, 3);
+	    num /= 10;
+	}
+	while(num != 0);
+	
+	if(temp == sum){
+	    cout<<"This num is Armstrong Number";
+	}
+	else {
+	    cout<<"This num is Not Armstrong Number";
+	}
+	return 0;
+}
+
+
+
 
 
 
